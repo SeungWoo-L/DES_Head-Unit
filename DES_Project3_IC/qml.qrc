@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Background.qml</file>
+        <file>BatteryValue.qml</file>
+        <file>images/battery.png</file>
+        <file>images/elec_car.png</file>
+        <file>images/bg-mask.png</file>
+        <file>images/car-highlights.png</file>
+        <file>images/gauge-gauge-frame-sport-center.png</file>
+        <file>images/gauge-gauge-frame-sport-side.png</file>
+        <file>images/gauge-gauge-frame.png</file>
+        <file>images/needle-standard-sport.png</file>
+        <file>CentralCar.qml</file>
+        <file>BatteryBar.qml</file>
+        <file>Speed.qml</file>
+        <file>Gear.qml</file>
+        <file>Time.qml</file>
+        <file>MediaAlbum.qml</file>
+        <file>MediaLylics.qml</file>
+        <file>images/CharliePuth.png</file>
+        <file>images/LPHalf.png</file>
+    </qresource>
+</RCC>
