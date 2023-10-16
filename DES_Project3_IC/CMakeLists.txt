@@ -34,7 +34,7 @@ set(PROJECT_SOURCES
 
 # Add resource files
 set(RESOURCE_FILES
-    images/battery.png
+    
 )
 
 # CMake에서 .qrc 파일을 자동으로 처리하기 위한 설정
