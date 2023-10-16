@@ -37,25 +37,24 @@ set(RESOURCE_FILES
     
 )
 
-# CMake에서 .qrc 파일을 자동으로 처리하기 위한 설정
 qt_add_resources(QRC_FILES qml.qrc)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(DES_Project3_IC
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        ${QRC_FILES}  # 추가된 부분: .qrc 파일 포함
+        ${QRC_FILES}
     )
 else()
     if(ANDROID)
         add_library(DES_Project3_IC SHARED
             ${PROJECT_SOURCES}
-            ${QRC_FILES}  # 추가된 부분: .qrc 파일 포함
+            ${QRC_FILES}
         )
     else()
         add_executable(DES_Project3_IC
             ${PROJECT_SOURCES}
-            ${QRC_FILES}  # 추가된 부분: .qrc 파일 포함
+            ${QRC_FILES}
         )
     endif()
 endif()
