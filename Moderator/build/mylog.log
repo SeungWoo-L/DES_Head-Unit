@@ -1,0 +1,39 @@
+[CAPI][INFO] Loading configuration file '/etc/commonapi.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:Moderator.ServiceManager:v1_0:ServiceManager <--> [9999.5618(1.0)]
+[CAPI][INFO] Registering function for creating "Moderator.ServiceManager:v1_0" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:Can_Receiver.Speed_Sensor:v1_0:Speed_Sensor <--> [3000.55f0(1.0)]
+[CAPI][VERBOSE] Registering function for creating "Can_Receiver.Speed_Sensor:v1_0" proxy.
+[CAPI][DEBUG] Loading library for local:Moderator.ServiceManager:v1_0:ServiceManager stub.
+[CAPI][DEBUG] Loading interface library "liblocal__Moderator_ServiceManager:v1_0__ServiceManager.so" failed (liblocal__Moderator_ServiceManager:v1_0__ServiceManager.so: cannot open shared object file: No such file or directory)
+[CAPI][INFO] Registering stub for "local:Moderator.ServiceManager:v1_0:ServiceManager"
+[CAPI][DEBUG] Loading library for local:Can_Receiver.Speed_Sensor:v1_0:Speed_Sensor proxy.
+[CAPI][DEBUG] Loading interface library "liblocal__Can_Receiver_Speed_Sensor:v1_0__Speed_Sensor.so" failed (liblocal__Can_Receiver_Speed_Sensor:v1_0__Speed_Sensor.so: cannot open shared object file: No such file or directory)
+[CAPI][VERBOSE] Creating proxy for "local:Can_Receiver.Speed_Sensor:v1_0:Speed_Sensor"
+[CAPI][INFO] Loading configuration file '/etc/commonapi.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:Moderator.ServiceManager:v1_0:ServiceManager <--> [9999.5618(1.0)]
+[CAPI][INFO] Registering function for creating "Moderator.ServiceManager:v1_0" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:Can_Receiver.Speed_Sensor:v1_0:Speed_Sensor <--> [3000.55f0(1.0)]
+[CAPI][VERBOSE] Registering function for creating "Can_Receiver.Speed_Sensor:v1_0" proxy.
+[CAPI][DEBUG] Loading library for local:Moderator.ServiceManager:v1_0:ServiceManager stub.
+[CAPI][DEBUG] Loading interface library "liblocal__Moderator_ServiceManager:v1_0__ServiceManager.so" failed (liblocal__Moderator_ServiceManager:v1_0__ServiceManager.so: cannot open shared object file: No such file or directory)
+[CAPI][INFO] Registering stub for "local:Moderator.ServiceManager:v1_0:ServiceManager"
+[CAPI][DEBUG] Loading library for local:Can_Receiver.Speed_Sensor:v1_0:Speed_Sensor proxy.
+[CAPI][DEBUG] Loading interface library "liblocal__Can_Receiver_Speed_Sensor:v1_0__Speed_Sensor.so" failed (liblocal__Can_Receiver_Speed_Sensor:v1_0__Speed_Sensor.so: cannot open shared object file: No such file or directory)
+[CAPI][VERBOSE] Creating proxy for "local:Can_Receiver.Speed_Sensor:v1_0:Speed_Sensor"
+[CAPI][INFO] Loading configuration file '/etc/commonapi.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:Moderator.ServiceManager:v1_0:ServiceManager <--> [9999.5618(1.0)]
+[CAPI][INFO] Registering function for creating "Moderator.ServiceManager:v1_0" stub adapter.
+[CAPI][DEBUG] Added address mapping: local:Can_Receiver.Speed_Sensor:v1_0:Speed_Sensor <--> [3000.55f0(1.0)]
+[CAPI][VERBOSE] Registering function for creating "Can_Receiver.Speed_Sensor:v1_0" proxy.
+[CAPI][DEBUG] Loading library for local:Moderator.ServiceManager:v1_0:ServiceManager stub.
+[CAPI][DEBUG] Loading interface library "liblocal__Moderator_ServiceManager:v1_0__ServiceManager.so" failed (liblocal__Moderator_ServiceManager:v1_0__ServiceManager.so: cannot open shared object file: No such file or directory)
+[CAPI][INFO] Registering stub for "local:Moderator.ServiceManager:v1_0:ServiceManager"
+[CAPI][DEBUG] Loading library for local:Can_Receiver.Speed_Sensor:v1_0:Speed_Sensor proxy.
+[CAPI][DEBUG] Loading interface library "liblocal__Can_Receiver_Speed_Sensor:v1_0__Speed_Sensor.so" failed (liblocal__Can_Receiver_Speed_Sensor:v1_0__Speed_Sensor.so: cannot open shared object file: No such file or directory)
+[CAPI][VERBOSE] Creating proxy for "local:Can_Receiver.Speed_Sensor:v1_0:Speed_Sensor"
