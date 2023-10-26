@@ -1,0 +1,37 @@
+{
+	"BUILD_DIR" : "/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/build/DES_Project3_IC_autogen",
+	"CMAKE_BINARY_DIR" : "/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/lee/DES_Head-Unit/project-can/DES_Project3_IC",
+	"CMAKE_SOURCE_DIR" : "/home/lee/DES_Head-Unit/project-can/DES_Project3_IC",
+	"INCLUDE_DIR" : "/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/build/DES_Project3_IC_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/qml.qrc",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/qml/MediaLyrics.qml",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/qml/CentralCar.qml",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/qml/Speed.qml",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/qml/Time.qml",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/qml/BatteryValue.qml",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/qml/Gear.qml",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/qml/MediaAlbum.qml",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/qml/BatteryBar.qml",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/qml/Background.qml",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/qml/main.qml",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/images/elec_car.png",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/images/LPHalf.png",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/images/CharliePuth.png",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/images/bg-mask.png",
+		"/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/images/car-highlights.png"
+	],
+	"LOCK_FILE" : "/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/build/CMakeFiles/DES_Project3_IC_autogen.dir/AutoRcc_qml_UVLADIE3JM_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "UVLADIE3JM",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "/home/lee/Qt/5.15.15/gcc_64/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/build/CMakeFiles/DES_Project3_IC_autogen.dir/AutoRcc_qml_UVLADIE3JM_Used.txt",
+	"SOURCE" : "/home/lee/DES_Head-Unit/project-can/DES_Project3_IC/src/qml.qrc",
+	"VERBOSITY" : 0
+}

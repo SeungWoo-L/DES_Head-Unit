@@ -1,0 +1,16 @@
+[CAPI][INFO] Loading configuration file '/etc/commonapi.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:Moderator.ServiceManager:v1_0:ServiceManager <--> [9999.5618(1.0)]
+[CAPI][VERBOSE] Registering function for creating "Moderator.ServiceManager:v1_0" proxy.
+[CAPI][DEBUG] Loading library for local:Moderator.ServiceManager:v1_0:ServiceManager proxy.
+[CAPI][DEBUG] Loading interface library "liblocal__Moderator_ServiceManager:v1_0__ServiceManager.so" failed (liblocal__Moderator_ServiceManager:v1_0__ServiceManager.so: cannot open shared object file: No such file or directory)
+[CAPI][VERBOSE] Creating proxy for "local:Moderator.ServiceManager:v1_0:ServiceManager"
+[CAPI][INFO] Loading configuration file '/etc/commonapi.ini'
+[CAPI][INFO] Using default binding 'someip'
+[CAPI][INFO] Using default shared library folder '/usr/local/lib/commonapi'
+[CAPI][DEBUG] Added address mapping: local:Moderator.ServiceManager:v1_0:ServiceManager <--> [9999.5618(1.0)]
+[CAPI][VERBOSE] Registering function for creating "Moderator.ServiceManager:v1_0" proxy.
+[CAPI][DEBUG] Loading library for local:Moderator.ServiceManager:v1_0:ServiceManager proxy.
+[CAPI][DEBUG] Loading interface library "liblocal__Moderator_ServiceManager:v1_0__ServiceManager.so" failed (liblocal__Moderator_ServiceManager:v1_0__ServiceManager.so: cannot open shared object file: No such file or directory)
+[CAPI][VERBOSE] Creating proxy for "local:Moderator.ServiceManager:v1_0:ServiceManager"
