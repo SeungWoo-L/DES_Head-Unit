@@ -1,4 +1,0 @@
-/home/lee/DES_Head-Unit/project-can/Moderator/build/CMakeFiles/ServiceManager.dir
-/home/lee/DES_Head-Unit/project-can/Moderator/build/CMakeFiles/ServiceManagerLib.dir
-/home/lee/DES_Head-Unit/project-can/Moderator/build/CMakeFiles/edit_cache.dir
-/home/lee/DES_Head-Unit/project-can/Moderator/build/CMakeFiles/rebuild_cache.dir
