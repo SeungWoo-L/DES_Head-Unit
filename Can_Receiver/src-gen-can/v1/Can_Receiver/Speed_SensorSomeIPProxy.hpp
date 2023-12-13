@@ -7,10 +7,10 @@
  * If a copy of the MPL was not distributed with this file, You can obtain one at
  * http://mozilla.org/MPL/2.0/.
  */
-#ifndef V1_COMMONAPI_SERVICE_MANAGER_SOMEIP_PROXY_HPP_
-#define V1_COMMONAPI_SERVICE_MANAGER_SOMEIP_PROXY_HPP_
+#ifndef V1_CAN_RECEIVER_SPEED__SENSOR_SOMEIP_PROXY_HPP_
+#define V1_CAN_RECEIVER_SPEED__SENSOR_SOMEIP_PROXY_HPP_
 
-#include <v1/commonapi/ServiceManagerProxyBase.hpp>
+#include <v1/Can_Receiver/Speed_SensorProxyBase.hpp>
 
 #if !defined (COMMONAPI_INTERNAL_COMPILATION)
 #define COMMONAPI_INTERNAL_COMPILATION
@@ -20,6 +20,7 @@
 #include <CommonAPI/SomeIP/Factory.hpp>
 #include <CommonAPI/SomeIP/Proxy.hpp>
 #include <CommonAPI/SomeIP/Types.hpp>
+#include <CommonAPI/SomeIP/Attribute.hpp>
 
 #if defined (HAS_DEFINED_COMMONAPI_INTERNAL_COMPILATION_HERE)
 #undef COMMONAPI_INTERNAL_COMPILATION
@@ -41,36 +42,34 @@
 # endif
 
 namespace v1 {
-namespace commonapi {
+namespace Can_Receiver {
 
-class ServiceManagerSomeIPProxy
-    : virtual public ServiceManagerProxyBase,
+class Speed_SensorSomeIPProxy
+    : virtual public Speed_SensorProxyBase,
       virtual public CommonAPI::SomeIP::Proxy {
 public:
-    ServiceManagerSomeIPProxy(
+    Speed_SensorSomeIPProxy(
         const CommonAPI::SomeIP::Address &_address,
         const std::shared_ptr<CommonAPI::SomeIP::ProxyConnection> &_connection);
 
-    virtual ~ServiceManagerSomeIPProxy();
+    virtual ~Speed_SensorSomeIPProxy();
 
-    virtual void setRpm(uint32_t _filteredRpm, CommonAPI::CallStatus &_internalCallStatus, std::string &_message, const CommonAPI::CallInfo *_info);
+    virtual SpeedAttribute& getSpeedAttribute();
 
-    virtual std::future<CommonAPI::CallStatus> setRpmAsync(const uint32_t &_filteredRpm, SetRpmAsyncCallback _callback, const CommonAPI::CallInfo *_info);
-
-    virtual void setSpeed(uint32_t _filteredSpeed, CommonAPI::CallStatus &_internalCallStatus, std::string &_message, const CommonAPI::CallInfo *_info);
-
-    virtual std::future<CommonAPI::CallStatus> setSpeedAsync(const uint32_t &_filteredSpeed, SetSpeedAsyncCallback _callback, const CommonAPI::CallInfo *_info);
+    virtual RpmAttribute& getRpmAttribute();
 
     virtual void getOwnVersion(uint16_t &_major, uint16_t &_minor) const;
 
     virtual std::future<void> getCompletionFuture();
 
 private:
+    CommonAPI::SomeIP::ObservableAttribute<CommonAPI::SomeIP::Attribute<SpeedAttribute, CommonAPI::SomeIP::IntegerDeployment<uint32_t>>> speed_;
+    CommonAPI::SomeIP::ObservableAttribute<CommonAPI::SomeIP::Attribute<RpmAttribute, CommonAPI::SomeIP::IntegerDeployment<uint32_t>>> rpm_;
 
     std::promise<void> completed_;
 };
 
-} // namespace commonapi
+} // namespace Can_Receiver
 } // namespace v1
 
-#endif // V1_COMMONAPI_Service_Manager_SOMEIP_PROXY_HPP_
+#endif // V1_CAN_RECEIVER_Speed__Sensor_SOMEIP_PROXY_HPP_

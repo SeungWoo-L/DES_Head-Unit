@@ -7,11 +7,11 @@
  * If a copy of the MPL was not distributed with this file, You can obtain one at
  * http://mozilla.org/MPL/2.0/.
  */
-#include <v1/commonapi/ServiceManagerSomeIPDeployment.hpp>
+#include <v1/Can_Receiver/Speed_SensorSomeIPDeployment.hpp>
 
 namespace v1 {
-namespace commonapi {
-namespace ServiceManager_ {
+namespace Can_Receiver {
+namespace Speed_Sensor_ {
 
 // Type-specific deployments
 
@@ -21,6 +21,6 @@ namespace ServiceManager_ {
 
 // Broadcast-specific deployments
 
-} // namespace ServiceManager_
-} // namespace commonapi
+} // namespace Speed_Sensor_
+} // namespace Can_Receiver
 } // namespace v1

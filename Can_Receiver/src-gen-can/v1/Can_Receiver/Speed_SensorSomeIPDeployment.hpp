@@ -8,8 +8,8 @@
  * http://mozilla.org/MPL/2.0/.
  */
 
-#ifndef V1_COMMONAPI_Service_Manager_SOMEIP_DEPLOYMENT_HPP_
-#define V1_COMMONAPI_Service_Manager_SOMEIP_DEPLOYMENT_HPP_
+#ifndef V1_CAN_RECEIVER_Speed__Sensor_SOMEIP_DEPLOYMENT_HPP_
+#define V1_CAN_RECEIVER_Speed__Sensor_SOMEIP_DEPLOYMENT_HPP_
 
 
 #if !defined (COMMONAPI_INTERNAL_COMPILATION)
@@ -23,8 +23,8 @@
 #endif
 
 namespace v1 {
-namespace commonapi {
-namespace ServiceManager_ {
+namespace Can_Receiver {
+namespace Speed_Sensor_ {
 
 // Interface-specific deployment types
 
@@ -36,8 +36,8 @@ namespace ServiceManager_ {
 
 // Broadcast-specific deployments
 
-} // namespace ServiceManager_
-} // namespace commonapi
+} // namespace Speed_Sensor_
+} // namespace Can_Receiver
 } // namespace v1
 
-#endif // V1_COMMONAPI_Service_Manager_SOMEIP_DEPLOYMENT_HPP_
+#endif // V1_CAN_RECEIVER_Speed__Sensor_SOMEIP_DEPLOYMENT_HPP_

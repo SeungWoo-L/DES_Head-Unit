@@ -7,9 +7,10 @@
 * If a copy of the MPL was not distributed with this file, You can obtain one at
 * http://mozilla.org/MPL/2.0/.
 */
-#ifndef V1_COMMONAPI_SERVICE_MANAGER_HPP_
-#define V1_COMMONAPI_SERVICE_MANAGER_HPP_
+#ifndef V1_CAN_RECEIVER_Speed__Sensor_PROXY_BASE_HPP_
+#define V1_CAN_RECEIVER_Speed__Sensor_PROXY_BASE_HPP_
 
+#include <v1/Can_Receiver/Speed_Sensor.hpp>
 
 
 
@@ -18,7 +19,9 @@
 #define HAS_DEFINED_COMMONAPI_INTERNAL_COMPILATION_HERE
 #endif
 
-#include <CommonAPI/Types.hpp>
+
+#include <CommonAPI/Attribute.hpp>
+#include <CommonAPI/Proxy.hpp>
 
 #if defined (HAS_DEFINED_COMMONAPI_INTERNAL_COMPILATION_HERE)
 #undef COMMONAPI_INTERNAL_COMPILATION
@@ -26,33 +29,26 @@
 #endif
 
 namespace v1 {
-namespace commonapi {
+namespace Can_Receiver {
 
-class ServiceManager {
+class Speed_SensorProxyBase
+    : virtual public CommonAPI::Proxy {
 public:
-    virtual ~ServiceManager() { }
+    typedef CommonAPI::ObservableAttribute<uint32_t> SpeedAttribute;
+    typedef CommonAPI::ObservableAttribute<uint32_t> RpmAttribute;
 
-    static inline const char* getInterface();
-    static inline CommonAPI::Version getInterfaceVersion();
+
+    virtual SpeedAttribute& getSpeedAttribute() = 0;
+    virtual RpmAttribute& getRpmAttribute() = 0;
+
+    virtual std::future<void> getCompletionFuture() = 0;
 };
 
-const char* ServiceManager::getInterface() {
-    return ("commonapi.ServiceManager:v1_0");
-}
-
-CommonAPI::Version ServiceManager::getInterfaceVersion() {
-    return CommonAPI::Version(1, 0);
-}
-
-
-} // namespace commonapi
+} // namespace Can_Receiver
 } // namespace v1
-
-namespace CommonAPI {
-}
 
 
 // Compatibility
 namespace v1_0 = v1;
 
-#endif // V1_COMMONAPI_SERVICE_MANAGER_HPP_
+#endif // V1_CAN_RECEIVER_Speed__Sensor_PROXY_BASE_HPP_

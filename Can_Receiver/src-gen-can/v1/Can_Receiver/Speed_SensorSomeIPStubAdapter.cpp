@@ -7,8 +7,8 @@
  * If a copy of the MPL was not distributed with this file, You can obtain one at
  * http://mozilla.org/MPL/2.0/.
  */
-#include <v1/commonapi/ServiceManagerSomeIPStubAdapter.hpp>
-#include <v1/commonapi/ServiceManager.hpp>
+#include <v1/Can_Receiver/Speed_SensorSomeIPStubAdapter.hpp>
+#include <v1/Can_Receiver/Speed_Sensor.hpp>
 
 #if !defined (COMMONAPI_INTERNAL_COMPILATION)
 #define COMMONAPI_INTERNAL_COMPILATION
@@ -23,27 +23,27 @@
 #endif
 
 namespace v1 {
-namespace commonapi {
+namespace Can_Receiver {
 
-std::shared_ptr<CommonAPI::SomeIP::StubAdapter> createServiceManagerSomeIPStubAdapter(
+std::shared_ptr<CommonAPI::SomeIP::StubAdapter> createSpeed_SensorSomeIPStubAdapter(
                    const CommonAPI::SomeIP::Address &_address,
                    const std::shared_ptr<CommonAPI::SomeIP::ProxyConnection> &_connection,
                    const std::shared_ptr<CommonAPI::StubBase> &_stub) {
-    return std::make_shared< ServiceManagerSomeIPStubAdapter<::v1::commonapi::ServiceManagerStub>>(_address, _connection, _stub);
+    return std::make_shared< Speed_SensorSomeIPStubAdapter<::v1::Can_Receiver::Speed_SensorStub>>(_address, _connection, _stub);
 }
 
-void initializeServiceManagerSomeIPStubAdapter() {
+void initializeSpeed_SensorSomeIPStubAdapter() {
     CommonAPI::SomeIP::AddressTranslator::get()->insert(
-        "local:commonapi.ServiceManager:v1_0:ServiceManager",
-         0x3e8, 0x2710, 1, 0);
+        "local:Can_Receiver.Speed_Sensor:v1_0:Speed_Sensor",
+         0x3000, 0x55f0, 1, 0);
     CommonAPI::SomeIP::Factory::get()->registerStubAdapterCreateMethod(
-        "commonapi.ServiceManager:v1_0",
-        &createServiceManagerSomeIPStubAdapter);
+        "Can_Receiver.Speed_Sensor:v1_0",
+        &createSpeed_SensorSomeIPStubAdapter);
 }
 
-INITIALIZER(registerServiceManagerSomeIPStubAdapter) {
-    CommonAPI::SomeIP::Factory::get()->registerInterface(initializeServiceManagerSomeIPStubAdapter);
+INITIALIZER(registerSpeed_SensorSomeIPStubAdapter) {
+    CommonAPI::SomeIP::Factory::get()->registerInterface(initializeSpeed_SensorSomeIPStubAdapter);
 }
 
-} // namespace commonapi
+} // namespace Can_Receiver
 } // namespace v1
